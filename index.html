@@ -1,40 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Coventry Labs</title>
-	<style>
-		#container {
-			height: 100%;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			align-content: center;
-		}
-
-		.box {
-			text-align: center;
-		}
-
-		.responsive {
-			max-width: 400px;
-			height: auto;
-			width: auto;
-		}
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coventry Labs - Digital Innovation & Software Solutions</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<div id="container">
-		<img src="iceland.jpg" alt="iceland" class="responsive">
-		<div class="box">
-			Coventry Labs, LLC
-			<br>
-			<a href="mailto:support@coventrylabs.net">support</a>
-			<br>
-			<a href="privacy.html">privacy policy</a>
-			<br>
-			<a href="eula.html">end user license agreement (EULA)</a>
-		</div>
-	</div>
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Coventry Labs</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Coventry Labs</h1>
+                <img src="iceland.jpg" alt="Coventry Labs" class="hero-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <p style="text-align: center; color: var(--text-light); max-width: 800px; margin: 0 auto 3rem;">
+                We're a software development company, started in Boulder, Colorado. We build mobile apps for iOS and Android. Our current focus is AI-powered sleep and relaxation apps, but are always engaging in new projects.
+            </p>
+
+            <h2 style="text-align: center; margin-bottom: 2rem;">Our Projects</h2>
+            <div class="services-grid" id="services">
+                <div class="service-card">
+                    <h3>Meandering Sleep</h3>
+                    <p>An app that generates unique, calming bedtime stories using AI. Each story is designed to help your mind wander and drift off to sleep naturally.</p>
+                    <p style="margin-top: 1rem;"><a href="https://www.meanderingsleep.com/" target="_blank" style="color: var(--primary-color);">Visit Meandering Sleep →</a></p>
+                </div>
+                <div class="service-card">
+                    <h3>History Sleep</h3>
+                    <p>AI-generated historical stories for bedtime. Learn about fascinating historical events while relaxing your mind for sleep.</p>
+                    <p style="margin-top: 1rem;"><a href="https://www.historysleep.com/" target="_blank" style="color: var(--primary-color);">Visit History Sleep →</a></p>
+                </div>
+                <div class="service-card">
+                    <h3>Custom Development</h3>
+                    <p>We also build custom mobile and web applications for clients. Experienced in React Native, Swift, Kotlin, and modern web frameworks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p style="color: var(--text-light); margin-bottom: 2rem;">
+                Questions? Need support? Want to work together?
+            </p>
+            <a href="mailto:support@coventrylabs.net" class="contact-link">Email Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Coventry Labs</h3>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <p><a href="#about">About Us</a></p>
+                    <p><a href="#services">Services</a></p>
+                    <p><a href="privacy.html">Privacy Policy</a></p>
+                    <p><a href="eula.html">End User License Agreement</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p><a href="mailto:support@coventrylabs.net">support@coventrylabs.net</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Coventry Labs, LLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
